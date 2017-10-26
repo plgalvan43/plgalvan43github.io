@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href"main.css"/>
+		<title>Summit Academy football frosh/soph</title>
+		<center>
+		<head>Summit Acdemy football frosh/soph</head>
+		<script>
+		function banner(){
+			var text=confirm("football")
+			return text;
+		}
+		function answer(){
+			var radio=document.getElementsByName("trivia");
+			var selection=false;
+			var message="";
+			for(var i=0;<radio.length;i++){
+				if(radio[i].value=="kcr"&&radio
+			[i].checked==true){
+					selection=true;
+				}//end if statement
+			}//end for loop
+			if(selection==true){
+				message=message+"<b><p
+				style=color:green'>Way to go!</p></b>";
+					}else{
+					message=message+"<b><p
+					style='color:red'>Try again my friend.</p></b>";
+					}
+					document.getElementById("response").innerHTML=messasge;
+		}//end function answer
+		</script>
+	</head>
+	<form>
+		<div id="response"></div>
+	</form>
+	<input type="button" id="submit" value="Click here">
+	<input type="button" id"submit" value="Click here" onclick"answer()">
+	<a href"http://bing.com" onclick="return banner()">
+	<header id="header">Summit Academy football</header>
+	<body>
+		<p>Coming Soon</p>
+	</body>
+	</center>
+</html>
